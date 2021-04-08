@@ -257,7 +257,7 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam,
     glUseProgram(program);
     glBindVertexArray(vao);
     glDrawArrays(GL_TRIANGLES, 0, 3);
-    // glBindVertexArray(0); // no need to unbind it every time 
+    // glBindVertexArray(0); // no need to unbind it every time
 
     SwapBuffers(hdc);
 

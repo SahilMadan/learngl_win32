@@ -258,7 +258,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
       elapsed_milliseconds.QuadPart *= 1000;
       elapsed_milliseconds.QuadPart /= frequency.QuadPart;
 
-      if (elapsed_milliseconds.QuadPart > milliseconds_per_frame)  {
+      if (elapsed_milliseconds.QuadPart > milliseconds_per_frame) {
         previous = current;
         RedrawWindow(hwnd, /*lprcUpdate=*/NULL, /*hrgnUpdate=*/NULL,
                      RDW_INVALIDATE | RDW_UPDATENOW);
