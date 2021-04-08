@@ -24,6 +24,11 @@ all: 1_1 2_1 2_2 3_1
 	cl.exe $(SRC_DIR)\3_1_shaders_uniform.cc /link $(LINK_LIBS) && \
 	popd
 
+3_2: build_dir
+	pushd $(BUILD_DIR) && \
+	cl.exe $(SRC_DIR)\3_2_shaders_interpolation.cc /link $(LINK_LIBS) && \
+	popd
+
 build_dir:
 	-@ if NOT EXIST $(BUILD_DIR) mkdir $(BUILD_DIR)
 
