@@ -6,31 +6,31 @@ LINK_LIBS=User32.lib Gdi32.lib Opengl32.lib
 INCLUDE_CMD=/I ..\common
 COMMON_OBJ=.\lib\gl_init.obj .\lib\program.obj
 
-all: 1_1 2_1 2_2 3_1
+all: 1_1 2_1 2_2 3_1 3_2 3_3
 
 1_1: build_dir
 	pushd $(BUILD_DIR) && \
-	cl.exe $(SRC_DIR)\1_1_hello_window.cc /link $(LINK_LIBS) && \
+	cl.exe $(SRC_DIR)\1_1_hello_window.cpp /link $(LINK_LIBS) && \
 	popd
 
 2_1: build_dir
 	pushd $(BUILD_DIR) && \
-	cl.exe $(SRC_DIR)\2_1_hello_triangle.cc /link $(LINK_LIBS) && \
+	cl.exe $(SRC_DIR)\2_1_hello_triangle.cpp /link $(LINK_LIBS) && \
 	popd
 
 2_2: build_dir
 	pushd $(BUILD_DIR) && \
-	cl.exe $(SRC_DIR)\2_2_hello_triangle_indexed.cc /link $(LINK_LIBS) && \
+	cl.exe $(SRC_DIR)\2_2_hello_triangle_indexed.cpp /link $(LINK_LIBS) && \
 	popd
 
 3_1: build_dir
 	pushd $(BUILD_DIR) && \
-	cl.exe $(SRC_DIR)\3_1_shaders_uniform.cc /link $(LINK_LIBS) && \
+	cl.exe $(SRC_DIR)\3_1_shaders_uniform.cpp /link $(LINK_LIBS) && \
 	popd
 
 3_2: build_dir
 	pushd $(BUILD_DIR) && \
-	cl.exe $(SRC_DIR)\3_2_shaders_interpolation.cc /link $(LINK_LIBS) && \
+	cl.exe $(SRC_DIR)\3_2_shaders_interpolation.cpp /link $(LINK_LIBS) && \
 	popd
 
 3_3: build_dir common
