@@ -1,0 +1,36 @@
+#ifndef LEARNGL_WIN32_COMMON_GL_INIT_HPP_
+#define LEARNGL_WIN32_COMMON_GL_INIT_HPP_
+
+#define WIN32_LEAN_AND_MEAN 1
+#include <Windows.h>
+#include <gl/glcorearb.h>
+#include <gl/wglext.h>
+
+extern PFNGLATTACHSHADERPROC glAttachShader;
+extern PFNGLBINDBUFFERPROC glBindBuffer;
+extern PFNGLBINDVERTEXARRAYPROC glBindVertexArray;
+extern PFNGLBUFFERDATAPROC glBufferData;
+extern PFNGLCOMPILESHADERPROC glCompileShader;
+extern PFNGLCREATEPROGRAMPROC glCreateProgram;
+extern PFNGLCREATESHADERPROC glCreateShader;
+extern PFNGLDELETESHADERPROC glDeleteShader;
+extern PFNGLENABLEVERTEXATTRIBARRAYPROC glEnableVertexAttribArray;
+extern PFNGLGENBUFFERSPROC glGenBuffers;
+extern PFNGLGENVERTEXARRAYSPROC glGenVertexArrays;
+extern PFNGLGETPROGRAMINFOLOGPROC glGetProgramInfoLog;
+extern PFNGLGETPROGRAMIVPROC glGetProgramiv;
+extern PFNGLGETSHADERINFOLOGPROC glGetShaderInfoLog;
+extern PFNGLGETSHADERIVPROC glGetShaderiv;
+extern PFNGLGETUNIFORMLOCATIONPROC glGetUniformLocation;
+extern PFNGLLINKPROGRAMPROC glLinkProgram;
+extern PFNGLSHADERSOURCEPROC glShaderSource;
+extern PFNGLUNIFORM1FPROC glUniform1f;
+extern PFNGLUNIFORM1IPROC glUniform1i;
+extern PFNGLUNIFORM4FPROC glUniform4f;
+extern PFNGLUSEPROGRAMPROC glUseProgram;
+extern PFNGLVERTEXATTRIBPOINTERPROC glVertexAttribPointer;
+extern PFNWGLCREATECONTEXTATTRIBSARBPROC wglCreateContextAttribsArb;
+
+void InitGlFunctions();
+
+#endif
